@@ -14,7 +14,7 @@ class Circle:
         self.area = math.pi * math.pow(self.radius, 2)
 
     def __str__(self):
-        return f"Circle radius: {self.radius}, Circle diameter: {self.diameter}, Circle area: {self.area}"
+        return f"Circle radius: {self.radius}, Circle diameter: {self.diameter}, Circle area: {format(self.area, '.3f')}"
 
     def __add__(self, other):
         newCircle = Circle(self.radius + other.radius, self.diameter + other.diameter)

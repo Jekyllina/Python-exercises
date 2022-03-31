@@ -10,6 +10,9 @@ if __name__ == "__main__":
     print(str(circle2))
     circles.append(circle2)
 
+    circleAdd = circle + circle2
+    print(f"Sum of two circles: {str(circleAdd)}")
+
     print(f"The Circles are equals? {circle == circle2}")
     
     print(f"circle with area {circle.area} is bigger than circle2 with area {circle2.area}? {circle > circle2}")
