@@ -14,9 +14,7 @@ class SparseArray():
             return self.sparse_array[index]
 
     def __setitem__(self, index, value):
-        if value == 0:
-            return
-        else:
+        if value != 0:            
             self.sparse_array[index] = value 
         
     def __delitem__(self, index):

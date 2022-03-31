@@ -2,16 +2,16 @@ from circle import Circle
 
 if __name__ == "__main__":
     circles = []
-    circle = Circle(radius = -4)    
-    print(str(circle))
-    circles.append(circle)
+    circle = Circle(radius = 4)    
+    print(circle)
+    circles.append(circle)    
 
     circle2 = Circle(radius = 2.5)
-    print(str(circle2))
+    print(circle2)
     circles.append(circle2)
 
     circleAdd = circle + circle2
-    print(f"Sum of two circles: {str(circleAdd)}")
+    print(f"Sum of two circles: {circleAdd}")
 
     print(f"The Circles are equals? {circle == circle2}")
     
@@ -30,4 +30,4 @@ if __name__ == "__main__":
 
     print("\nCircles after sorting:")
     for circle in circles:
-        print(str(circle)) 
+        print(circle) 
